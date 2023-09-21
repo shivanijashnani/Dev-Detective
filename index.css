@@ -1,0 +1,220 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script&family=Lilita+One&family=Pacifico&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+  *,*::after,*::before{
+    padding: 0;margin: 0;box-sizing: border-box;font-family: 'Space Mono';
+  }
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color:rgb(241, 245, 255);
+    
+}
+
+.container{
+    position: absolute  ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 527px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+}
+/* //////////////////////////////////////// */
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #145DA0;
+}
+#modeBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color:#145DA0;
+    gap: 6px;
+}
+
+.modeText{
+    letter-spacing: 3px;
+    font: bold;
+}
+
+/* ///////////////////////////////////////// */
+
+main{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    background-image: url(./Images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding: 5px 4px 5px 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 10px 9px .78px #cbddee; 
+
+}
+.searchContainer input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.searchContainer .error{
+    position: absolute;
+    opacity: 1;
+    top: -30px;
+    right: -30px;
+    background:red;
+    color: white;
+    padding: 4px 15px;
+    font:bolder;
+    border-radius: 10px;
+    scale: 0;
+
+}
+
+.searchContainer #btn{
+background: rgb(3, 126, 249);
+color: white;
+font-family: 'Space Mono';
+font: bold;
+border: none;
+font-size: 16px;
+letter-spacing: -.20px;
+padding: 12px 14px;
+border-radius: 6px;
+
+}
+.searchContainer #btn:hover{
+    background: #007bffbd;
+}
+
+/* /////////////// */
+.profileContainer{
+    box-shadow: 5px 10px 9px .78px #cbddee; 
+
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    background: white;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+.profileContent{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 10px;
+
+
+}
+
+.profileHeader{
+    display: flex;
+    /* justify-content: space-between; */
+    
+    padding: 10px;
+    gap: 1rem;
+
+}
+.profileInfoWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#userImage{
+    width: 90px; height: 90px; border-radius: 90px;
+}
+#name{
+    color: black;
+    font-size: medium;
+}
+.profileInfoWrapper a{
+    color: #0084ff;
+    font-size: small;
+
+}
+
+
+#date{
+    font-size: 13px;
+}
+
+#ProfileBio{
+    padding: 0 10px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.426);
+    font-weight: bold;
+}
+/* /////////////////////////////// */
+
+.statsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgb(241, 245, 255);
+    border-radius: 15px;
+    padding: 1rem 0;
+}
+.profileStats {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    font-size: 14px;
+}
+.profileStats p{
+    color: black;
+    opacity: .7;
+}
+.profileStats a{
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.profileStats a:hover{
+    text-decoration: underline;
+}
+
+/* /////////////////////////////////////// */
+.profileFooter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 10px; */
+
+    
+}
+.profileFooter .profileInfo{
+    width: 40%;
+    display: flex;
+    gap: 10px;
+}
+
+.profileFooter p{
+font-size: 13px;
+}
